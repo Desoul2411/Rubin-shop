@@ -1,0 +1,21 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 41px 65px 65px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width:992px) {
+    padding: 0 20px 65px 35px;
+  }
+
+  @media (max-width:768px) {
+    padding: 0 20px 40px 20px;
+  }
+
+  @media (max-width:425px) {
+    padding: 0 12px 20px 12px;
+  }
+}

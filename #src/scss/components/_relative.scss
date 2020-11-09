@@ -1,0 +1,11 @@
+.relative {
+  &__content{
+    max-width: 1600px;
+    margin: 0 auto 60px;
+    background-color: #fff;
+  }
+
+  .section__title{
+    padding: 20px;
+  }
+}

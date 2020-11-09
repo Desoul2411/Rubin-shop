@@ -1,0 +1,18 @@
+.stars {
+  margin-right: 18px;
+  @media (max-width: 1460px) {
+    white-space: nowrap;
+  }
+
+  &__item_full path{
+    fill: $accent-color;
+  }
+}
+
+.leave .stars {
+  margin-bottom: 32px;
+}
+
+.notes .stars {
+  margin-bottom: 21px;
+}

@@ -1,0 +1,179 @@
+.criteria {
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #EBEBEB;
+  @media (max-width: 1460px) {
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    @include lato-600();
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    margin-bottom: 34px;
+    @media (max-width: 1460px) {
+      margin-bottom: 10px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__title {
+    @include lato-normal();
+    font-size: 13px;
+    line-height: 192%;
+    text-transform: uppercase;
+    color: #4F4F4F;
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    @include lato-normal();
+    font-size: 12px;
+    line-height: 168%;
+    text-align: right;
+    color: #828282;
+    text-decoration: none;
+    border-bottom: 1px dashed #828282;
+    cursor: pointer;
+    transition-duration: 400ms;
+    &:hover {
+      transition-duration: 400ms;
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+
+  &__title-accent {
+    @include lato-bold();
+    font-size: 13px;
+    line-height: 123%;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  &__checkbox-list {
+    max-width: 640px;
+  }
+
+  &__checkbox-item {
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 6px;
+  }
+
+  &__checkbox-label {
+    position: relative;
+  }
+
+  &__checkbox {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__checkbox-style {
+    display: inline-block;
+    padding: 9px 12px;
+    cursor: pointer;
+    border: 2px solid #666;
+    background-color: #fff;
+    font-size: 13px;
+    line-height: 123%;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  &__checkbox:checked + .criteria__checkbox-style,
+  &__checkbox-style_active,
+  &__checkbox-style:hover {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+
+  &__btn-full {
+    @include lato-normal();
+    font-size: 13px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    background-color: #FC5C79;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 20px;
+    transition-duration: 400ms;
+
+    @media (max-width: 1680px) {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      transition-duration: 400ms;
+      background-color: $accent-hover;
+    }
+
+    svg {
+      margin-right: 6px;
+      position: relative;
+      bottom: -1px;
+    }
+  }
+
+  &__btn-empty {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition-duration: 400ms;
+
+    @media (max-width: 576px) {
+      margin-bottom: 20px;
+    }
+
+    svg {
+      position: relative;
+      bottom: -2px;
+      margin-right: 8px;
+
+      path {
+        transition-duration: 400ms;
+      }
+    }
+
+    &:hover {
+      color: $accent-color;
+      transition-duration: 400ms;
+
+      path{
+        fill: $accent-color;
+        transition-duration: 400ms;
+      }
+    }
+  }
+}
+
+.criteria_modal {
+  .criteria__desc {
+    margin-bottom: 28px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}

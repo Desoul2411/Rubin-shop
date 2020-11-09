@@ -1,0 +1,25 @@
+.filter-markers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -8px;
+
+    &__item {
+        background: #F1F1F1;
+        border: 1px solid #EEEEEE;
+        box-sizing: border-box;
+        padding: 5px 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    &__item-text {
+        font-size: 13px;
+        line-height: 123%;
+        color: $main-color;
+        margin-right: 9px;
+    }
+
+    &__item-icon {
+        cursor: pointer;
+    }
+}

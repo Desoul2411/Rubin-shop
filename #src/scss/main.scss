@@ -1,0 +1,68 @@
+@import "base/reset";
+@import "base/fonts";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/media";
+@import 'libs/simplebar';
+@import 'libs/owl.carousel';
+
+@import "components/header";
+@import "components/main-menu";
+@import "components/mobile-menu";
+@import "components/search";
+@import "components/user-menu";
+@import "components/product-menu";
+@import "components/socials";
+@import "components/promo";
+@import "components/popular";
+@import "components/poster";
+@import "components/slider";
+@import "components/card";
+@import "components/section-title";
+@import "components/bestsellers";
+@import "components/advantages";
+@import "components/hashtag";
+@import "components/recently";
+@import "components/up-button";
+@import "components/slider-arrows";
+@import "components/overlay";
+@import "components/modal-close-button";
+@import "components/modal-confirm";
+@import "components/modal-added-to-cart";
+/*product-card.html*/
+@import "components/main-card.scss";
+@import "components/gallery.scss";
+@import "components/product-desc.scss";
+@import "components/stars.scss";
+@import "components/main-info.scss";
+@import "components/criteria.scss";
+@import "components/features.scss";
+@import "components/relative.scss";
+@import "components/feedback.scss";
+@import "components/leave.scss";
+@import "components/notes.scss";
+@import "components/modal-sizes-table.scss";
+@import "components/rating.scss";
+
+/*catalogue.html*/
+@import "components/aside-menu";
+@import "components/catalogue-content";
+@import "components/pagination";
+@import "components/filter";
+@import "components/filter-markers";
+@import "components/footer";
+@import "components/catalogue-text-block";
+
+/*cart.html*/
+@import "components/cart-item";
+@import "components/order-info";
+@import "components/modal-edit-product";
+
+@import "pages/stock";
+@import "pages/home";
+@import "pages/catalogue";
+@import "pages/cart";
+@import "pages/sales";
+
+/*for js*/
+@import "base/common";

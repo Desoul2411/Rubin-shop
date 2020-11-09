@@ -1,0 +1,27 @@
+.main-info {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #EBEBEB;
+
+  @media (max-width: 1460px) {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__in-stock {
+    @include lato-normal();
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $accent-color;
+    margin-bottom: 12px;
+  }
+
+  &__p {
+    @include lato-normal();
+    font-size: 13px;
+    line-height: 138%;
+    color: $main-color;
+  }
+
+}

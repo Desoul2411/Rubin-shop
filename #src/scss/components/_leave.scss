@@ -1,0 +1,71 @@
+.leave {
+  max-width: 790px;
+  &__title {
+    @include lato-600();
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4F4F4F;
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+    @include lato-normal();
+    font-size: 14px;
+    line-height: 71%;
+    color: #666666;
+    margin-bottom: 20px;
+    display: block;
+    &_required:after {
+      content: '*';
+      color: $accent-color;
+      display: inline-block;
+      font-size: 14px;
+      margin-left: 2px;
+    }
+  }
+
+  &__title-review,
+  &__name-review,
+  &__textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px 11px;
+    @include lato-600();
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #4F4F4F;
+    background-color: #F9F9F9;
+    border: 1px solid #E3E3E3;
+    margin-bottom: 32px;
+  }
+
+  &__textarea {
+    @include lato-500();
+    padding: 12px 30px 12px 12px;
+    font-size: 14px;
+    line-height: 170.5%;
+    resize: none;
+  }
+
+  &__btn {
+    font-size: 14px;
+    line-height: 71%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: $accent-color;
+    border: none;
+    padding: 13px 34px 12px;
+    margin-bottom: 52px;
+    transition-duration: 400ms;
+    cursor: pointer;
+
+    &:hover {
+      transition-duration: 400ms;
+      background-color: $accent-hover;
+    }
+  }
+}

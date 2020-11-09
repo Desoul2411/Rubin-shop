@@ -1,0 +1,83 @@
+.edit-product-modal {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 417px;
+    height: 415px;
+
+    @media (max-width: 475px) {
+        width: 90%;
+    }
+
+    &__headline {
+        padding: 28px 30px 20px 30px;
+        border-bottom: 1px solid #EBEBEB;
+        @include cart-big-font;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0px 32px 30px;
+
+        @media (max-width: 425px) {
+            padding-right: 30px;
+        }
+        
+    }
+    
+    &__option {
+        margin-bottom: 24px;
+        &:last-of-type {
+            margin-bottom: 34px;
+        }
+    }
+
+    &__option-label {
+        @include lato-normal;
+        font-size: 14px;
+        line-height: 71%;
+        display: flex;
+        align-items: center;
+        color: #666666;
+        margin-bottom: 12px;
+    }
+
+    &__option-field {
+        width: 153px;
+        height: 35px;
+        background: #F9F9F9;
+        border: 1px solid #666666;
+        box-sizing: border-box;
+        outline: none;
+        padding-left: 11px;
+        padding-right: 15px;
+        
+        @media (max-width: 425px) {
+            width: 100%;
+        }
+    }
+
+    &__confirm-button {
+        width: 153px;
+        height: 35px;
+        background: $accent-color;
+        outline: none;
+        border: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: 0.3s;
+        
+        &:hover {
+            background-color: $accent-hover;
+        }
+
+        @media (max-width: 425px) {
+            align-self: center;
+        }
+    }
+}

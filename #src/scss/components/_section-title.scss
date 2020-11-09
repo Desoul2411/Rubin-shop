@@ -1,0 +1,8 @@
+.section__title{
+  @include lato-600();
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $main-color;
+}

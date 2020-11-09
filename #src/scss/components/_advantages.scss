@@ -1,0 +1,92 @@
+.advantages {
+  &__content {
+    max-width: 1600px;
+    margin: 0 auto 25px;
+    @media (max-width: 1600px) {
+      padding: 0 12px;
+    }
+    
+    @media (max-width:1024px) {
+      margin: 0 auto 20px;
+    }
+
+    @media (max-width:425px) {
+      margin: 0 auto 15px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    background-color: #fff;
+    flex-grow: 1;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 22px 10px 23px;
+    box-sizing: border-box;
+    @media (max-width: 1024px) {
+      padding: 22px 8px 23px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 0px;
+      margin-bottom: 2%;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:nth-child(1) .advantages__icon {
+      background-image: url("../img/icon-car.png");
+    }
+
+    &:nth-child(2) .advantages__icon {
+      background-image: url("../img/icon-label.png");
+    }
+
+    &:nth-child(3) .advantages__icon {
+      background-image: url("../img/icon-box.png");
+    }
+  }
+
+  &__icon {
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    @include lato-normal();
+    font-size: 17px;
+    line-height: 1.17;
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 6px;
+  }
+
+  &__desc{
+    @include lato-normal();
+    font-size: 13px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: lowercase;
+    color: $main-color;
+  }
+
+
+}

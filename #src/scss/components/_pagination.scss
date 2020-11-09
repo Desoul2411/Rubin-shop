@@ -1,0 +1,173 @@
+.pagination {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    /* right: 147px; */
+    padding-right: 5px;
+
+    &_feedback {
+        position: static;
+        justify-content: center;
+        padding-bottom: 45px;
+    }
+
+    &_questions {
+        position: static;
+        justify-content: center;
+        padding-bottom: 45px;
+    }
+
+    @media (max-width: 1024px) {
+        top: 14px;
+    }
+
+    &__total-products {
+        margin-right: 40px;
+        @include lato-normal;
+        font-size: 14px;
+        line-height: 154%;
+        color: $main-color;
+        text-transform: uppercase;
+        display: block;
+        @media (max-width: 425px) {
+            margin-right: 25px;
+        }
+    }
+
+    &__products-amount {
+        margin-right: 6px;
+    }
+
+    &__pages {
+        display: flex;
+        position: relative;
+    }
+
+    &__pages-wrapper {
+        position: relative;
+        overflow: hidden;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 16px;
+    }
+
+    &__page-numbers {
+        position: absolute;
+        display: flex;
+        transition: .2s;
+    }
+
+    &__prevButton {
+        position: absolute;
+        text-decoration: none;
+        width: 8px;
+        height: 14px;
+        top: 3px;
+        left: -4px;
+        cursor: pointer;
+        &:before {
+            position: absolute;
+            top: 5px;
+            right: 3px;
+            content: "";
+            display: block;
+            width: 7px;
+            height: 1px;
+            background-color: #333333;
+            transform: rotate(135deg);
+        }
+
+        &::after {
+            position: absolute;
+            top: 9.5px;
+            right: 3px;
+            content: "";
+            display: block;
+            width: 7px;
+            height: 1px;
+            background-color: #333333;
+            transform: rotate(45deg);
+        }
+    }
+    
+    &__nextButton {
+        position: absolute;
+        text-decoration: none;
+        width: 8px;
+        height: 14px;
+        top: 3px;
+        right: -9px;
+        cursor: pointer;    
+        &:before {
+            position: absolute;
+            top: 5px;
+            right: 3px;
+            content: "";
+            display: block;
+            width: 7px;
+            height: 1px;
+            background-color: #333333;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            position: absolute;
+            top: 9.5px;
+            right: 3px;
+            content: "";
+            display: block;
+            width: 7px;
+            height: 1px;
+            background-color: #333333;
+            transform: rotate(135deg);
+        }
+
+    }
+
+    &__prevButton.disabled, &__nextButton.disabled {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+    &__page-number {
+        text-decoration: none;
+        width: 22px;
+        /* margin-right: 10px; */
+        display: block;
+        @include lato-normal;
+        font-size: 14px;
+        line-height: 154%;
+        color: $main-color;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        &:last-of-type {
+            margin-right: 0px;
+        }
+        &.active {
+            color: $accent-color;
+        }
+        &:nth-child(n+10) {
+            width: 22px;
+        }
+    }
+}
+
+.pagination_catalogue-top {
+    @media (max-width: 840px) {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+.pagination_catalogue-bottom {
+    position: static;
+    align-self: flex-end;
+    @media (max-width: 425px) {
+        align-self:center;
+    }
+}
+

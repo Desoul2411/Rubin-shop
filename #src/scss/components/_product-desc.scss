@@ -1,0 +1,90 @@
+.product-desc {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 20px;
+
+    @media (max-width: 1460px) {
+      margin-bottom: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 850px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    @include lato-600();
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main-color;
+    @media (max-width: 1460px) {
+      margin-bottom: 5px;
+    }
+    @media (max-width: 850px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__reviews{
+    display: flex;
+    align-items: center;
+  }
+
+  &__count-reviews {
+    @include lato-normal();
+    font-size: 12px;
+    line-height: 168%;
+    text-align: right;
+    color: $accent-color;
+    text-decoration: none;
+    border-bottom: 1px dashed $accent-color;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1460px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  &__btns {
+    @media (max-width: 576px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    @media (max-width: 1460px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .share {
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+
+    @media (max-width: 1680px) {
+      margin-right: 10px;
+    }
+
+    svg:hover path{
+      fill: $accent-color;
+      transition-duration: 400ms;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.socials{
+  display: inline-block;
+  &__item{
+    display: inline-block;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+    color: $grey-light;
+    transition-duration: 400ms;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $accent-color;
+      transition-duration: 400ms;
+    }
+  }
+}
+
+.product-desc .socials{
+  &__item{
+    display: inline-block;
+    margin-right: 20px;
+
+    @media (max-width: 1680px) {
+      margin-right: 5px;
+    }
+  }
+  &__link{
+    font-size: 12px;
+    line-height: 167%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+

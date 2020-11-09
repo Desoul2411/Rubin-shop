@@ -1,0 +1,32 @@
+.main-menu{
+  flex-basis: 25%;
+  flex-grow: 1;
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+  }
+
+  &__link{
+    @include lato-normal();
+    font-size: 12px;
+    line-height: 467%;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    transition-duration: 400ms;
+    &_active,
+    &:hover {
+      color: $accent-color;
+      transition-duration: 400ms;
+    }
+  }
+
+  &__sub-list{
+    display: none;
+  }
+}

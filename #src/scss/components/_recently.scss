@@ -1,0 +1,22 @@
+.recently {
+  &__content{
+    max-width: 1600px;
+    margin: 0 auto 25px;
+    background-color: #fff;
+
+    @media (max-width:1024px) {
+      margin: 0 auto 20px;
+    }
+
+    @media (max-width:425px) {
+      margin: 0 auto 15px;
+    }
+  }
+  .section__title{
+    padding: 20px;
+  }
+}
+
+.product-card .recently__content {
+  margin-bottom: 60px;
+}

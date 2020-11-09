@@ -1,0 +1,124 @@
+.bestsellers {
+  &__content {
+    max-width: 1600px;
+    margin: 0 auto 15px;
+    background-color: #fff;
+    /* @media (max-width: 1600px) {
+      padding: 0 12px;
+      padding-top: 18px;
+    } */
+  }
+
+  &__headine {
+    padding: 18px 0;
+    border-bottom: 2px solid #E5E5E5;
+
+    @media (max-width: 425px) {
+      padding: 12px 0;
+    }
+  }
+
+  .section__title {
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  &__desc {
+    @include lato-normal();
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    color: $main-color;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 425px) {
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 12px;
+    }
+  }
+
+  &__item {
+    margin-right: 2.5%;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    
+    @media (max-width: 576px) {
+      flex-basis: 47.5%;
+      &:nth-child(2) {
+        margin-right: 0px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+    &:nth-child(1) .bestsellers__img{
+      background-image: url("../img/items/bestseller_01.png");
+    }
+    &:nth-child(2) .bestsellers__img{
+      background-image: url("../img/items/bestseller_02.png");
+    }
+    &:nth-child(3) .bestsellers__img{
+      background-image: url("../img/items/bestseller_03.png");
+    }
+    &:nth-child(4) .bestsellers__img{
+       background-image: url("../img/items/bestseller_04.png");
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+  }
+
+  &__img {
+    height: 411px;
+    width: 100%;
+    @include basic-bg();
+    margin-bottom: 23px;
+
+    @media (max-width: 1366px) {
+      height: 370px;
+    }
+
+    @media (max-width: 1024px) {
+      height: 280px;
+    }
+
+    @media (max-width: 768px) {
+      height: 250px;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__name {
+    @include lato-600();
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-bottom: 25px;
+
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+}

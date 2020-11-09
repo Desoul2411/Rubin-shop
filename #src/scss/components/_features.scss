@@ -1,0 +1,29 @@
+.features {
+  margin-bottom: 40px;
+
+  @media (max-width: 576px) {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    column-count: 2;
+    column-gap: 71px;
+    column-width: 220px;
+  }
+
+  &__item {
+    @include lato-normal();
+    font-size: 13px;
+    line-height: 154%;
+    color: #666;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    @include lato-bold();
+  }
+}
+
+.features_modal {
+  margin-bottom: 30px;
+}

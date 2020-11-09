@@ -1,0 +1,98 @@
+/*---------Text--------*/
+@mixin lato-600(){
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin lato-normal(){
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin lato-light(){
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin lato-500(){
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin lato-bold(){
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin aerial-normal(){
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin top-header-text(){
+  @include lato-600();
+  font-size: 11px;
+  line-height: 1.18;
+  text-align: right;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $grey-light;
+}
+
+
+@mixin basic-bg() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin cart-big-font() {
+  @include lato-600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+@mixin cart-option-headline() {
+  @include lato-500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+@mixin cart-option-name() {
+  @include lato-600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+@mixin cart-item-option-name() {
+  @include lato-600;
+  font-size: 13px;
+  line-height: 154%;
+  color: #666666;
+}
+
+@mixin cart-option-value() {
+  @include lato-normal;
+  font-size: 13px;
+  line-height: 154%;
+  color: #666666;
+}
+
